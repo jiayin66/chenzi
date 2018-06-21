@@ -15,9 +15,7 @@ import java.util.List;
  */
 public class ExtractCharYJY {
 	/**
-	 * 只需要三个参数，start stop path
-	 * 
-	 * @param args
+	 * @param 只需要三个参数，start stop path
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
