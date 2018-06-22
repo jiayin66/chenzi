@@ -8,6 +8,7 @@ import java.util.Set;
 
 /**
  * 可以删除文件夹下的重复文件，原理是通过MD5加密
+ * 只需要一个参数，就是文件的目录。
  * @author yjy
  *
  */
@@ -16,7 +17,7 @@ public class DeleteRepeatImage {
 		File file=new File("D:/weixin/WeChat Files/jiayinweixin520/Video");
 		File[] fileArray=file.listFiles();
 		System.out.println("总文件数为:"+fileArray.length);
-		Set set=new HashSet();
+		Set<String> set=new HashSet<String>();
 		int x=0;
 		for(int i=0;i<fileArray.length;i++){
 			//System.out.println(fileArray[i].getAbsolutePath());
